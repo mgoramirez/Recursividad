@@ -26,7 +26,19 @@ public class Main {
      */
     public static void main(String[] args) {
         Ejercicios ejercicio1= new Ejercicios();
-        System.out.println(ejercicio1.vocales("Hola mundo", 0));
+        Ejercicios ejercicio4=new Ejercicios();
+        
+        
+        System.out.println(ejercicio1.vocales("Croacia y venezuela", 0));
+        
+        
+        System.out.println(ejercicio4.calcExponencial(7, 3));
+        System.out.println(ejercicio4.factorial(5));
+        System.out.println(ejercicio4.calcExponencialRecursiva(7,3,0, 0));
+        System.out.println(ejercicio4.factorialRecursiva(5,1,1));
+        
+        
+        
     }
     
 }

@@ -26,10 +26,48 @@ public class Ejercicios {
             char letra= oracion.charAt(i);
             if (verificaVocal(letra)==1){
                 oracion=oracion.replaceAll(String.valueOf(letra),"");
-                vocales(oracion, i+1);
+                vocales(oracion, i);
             }
             oracion=vocales(oracion,i+1);
         }   
         return oracion;
+    }
+    
+    public double calcExponencial(int n, int x){
+        double result =0 ;
+        for(int i=0;i<n;i++){
+            result=result+(Math.pow(x,i)/factorial(i));
+        }
+        return result;
+    }
+    
+    public double factorial(int num){
+        double result=1;
+        for(int i=1;i<=num;i++){
+            result=result*i;
+        }
+        return result;
+    }
+    
+    public double calcExponencialRecursiva(int n, int x, int i, double result){
+       if(i<n){
+           result=result+(Math.pow(x,i)/factorial(i));
+           result=calcExponencialRecursiva(n,x,i+1,result);
+       }
+       return result;
+    }
+    
+    public double factorialRecursiva(int num,int i, double result){
+        if (i<1 || result<1){
+            i=1;
+            result=1;
+            System.out.println("Iniciando en 1");
+            result=factorialRecursiva(num,i,result);
+        }
+        if(i<=num){
+            result=result*i;
+            result=factorialRecursiva(num,i+1,result);
+        }
+        return result;
     }
 }
