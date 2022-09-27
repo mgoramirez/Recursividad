@@ -10,7 +10,7 @@ package recursividad;
  * @author Asus
  */
 public class Ejercicios {
-    
+   
     
     public char verificaVocal(char letra){
         if (letra=='a' || letra=='e' || letra=='i' ||letra=='o'||letra=='u'||letra=='A'||letra=='E'||letra=='I'||letra=='O'||letra=='U'){
@@ -28,7 +28,7 @@ public class Ejercicios {
                 oracion=oracion.replaceAll(String.valueOf(letra),"");
                 vocales(oracion, i+1);
             }
-            vocales(oracion,i+1);
+            oracion=vocales(oracion,i+1);
         }   
         return oracion;
     }

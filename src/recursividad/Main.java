@@ -25,8 +25,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Ejercicios ejercicio1= new Ejercicios();  
-        System.out.print(ejercicio1.vocales("Hola mundo", 0));
+        Ejercicios ejercicio1= new Ejercicios();
+        System.out.println(ejercicio1.vocales("Hola mundo", 0));
     }
     
 }
