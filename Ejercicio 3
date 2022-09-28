@@ -1,0 +1,20 @@
+package ejercicio3;
+
+public class Ejercicio3 {
+
+
+    public static void main(String[] args) {
+        //Numero que quiera identificar como binario '(123)'
+        binario(123);
+    }
+    public static void binario(int n ){
+        if(n<2){
+            System.out.println("Numero Binario:");
+            System.out.print(n);
+            return;
+        }else{
+            binario(n/2);
+            System.out.print(n%2);
+        }
+    }
+}
